@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type = "text/css">
+			canvas{
+				/*width:800;
+				height:1024;*/
+				border:1px solid black;
+			}
+		</style> 
+	</head>
+	<body>
+		<canvas id = "myCanvas" width = "400" height = "600">
+			
+		</canvas>
+		
+		<script type = "text/javascript">
+			var canvas = document.getElementById("myCanvas");
+			var ctx = canvas.getContext('2d');
+/**
+ * 画出格子图
+ */
+			var rows = 10,cols = 8;
+			var cellWidth = canvas.width/cols;
+			var cellHeight = canvas.height/rows;
+			ctx.beginPath();
+			for(var col = 1;col < cols;col++){
+				var x = cellWidth * col;
+				ctx.moveTo(x,0);
+				ctx.lineTo(x,canvas.height);
+			}
+			for(var row = 1;row <rows;row++){
+				var y = cellHeight * row;
+				ctx.moveTo(0,y);
+				ctx.lineTo(canvas.width,y);
+			}
+			ctx.strokeStyle = "aqua";
+			ctx.stroke();
+		</script>
+	</body>
+</html>

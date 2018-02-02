@@ -1,0 +1,31 @@
+body canvas {
+  /*width:800;
+  height:1024;*/
+  border: 1px solid black; }
+body div {
+  font-size: 13pt;
+  padding-bottom: 8px; }
+body span {
+  font-size: 20pt;
+  color: green; }
+body .broad {
+  width: 600px;
+  height: 40px;
+  border: 1px solid blueviolet; }
+  body .broad .info {
+    float: left;
+    margin-right: 20px; }
+body .mainCon {
+  width: 198px;
+  height: 50px;
+  font-size: 20px; }
+body .controls {
+  width: 600px; }
+  body .controls button {
+    width: 32%;
+    height: 32%;
+    font-size: 40px; }
+body .nosee {
+  visibility: hidden; }
+
+/*# sourceMappingURL=interface.css.map */

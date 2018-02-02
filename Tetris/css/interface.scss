@@ -1,0 +1,45 @@
+//@font-face{
+//  font-family: tmb;
+//  src:url("DS-DIGBIG.TTF") format("TrueType");
+//}
+body{
+    canvas{
+                /*width:800;
+                height:1024;*/
+                border:1px solid black;
+            }
+    div{
+        font-size:13pt;
+        padding-bottom:8px;
+    }
+    span{
+//      font-family: tmb;
+        font-size:20pt;
+        color:green;
+    }
+    .broad{
+        width:600px;
+        height:40px;
+        border:1px solid blueviolet;
+        .info{
+            float:left;
+            margin-right:20px;
+        }
+    }
+    .mainCon{
+        width:198px;
+        height:50px;
+        font-size: 20px;
+    }
+    .controls{
+        width:600px;
+        button{
+            width:32%;
+            height:32%;
+            font-size:40px;
+        }
+    }
+    .nosee{
+        visibility: hidden;
+    }
+}

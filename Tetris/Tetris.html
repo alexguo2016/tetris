@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Tetris</title>
+		<link rel="stylesheet" href="css/interface.css" />
+	</head>
+	<body>
+		<h2>Tetris</h2>
+		<div class = "broad">
+			<div class = "info speed">
+				Speed:<span id = "curSpeed">0</span>
+			</div>
+			<div class = "info score">
+				Score:<span id = "curScore">000</span>
+			</div>
+			<div class = "info highScore">
+				HighScore:<span id = "highScore">000</span>
+			</div>
+		</div>
+		<br />
+		<canvas id = "myCanvas" width = "600" height = "600">
+			
+		</canvas>
+		<canvas id = "preView" width = "150" height = "150"></canvas>
+		<br  />
+		<button class = "mainCon" type = "button" onclick = "gameStart()">Start</button> 
+		<button class = "mainCon" type = "button">Pause</button>
+		<button class = "mainCon" type = "button">Quit</button>
+		<div class = "controls">
+			<button type = "button" class = "nosee"></button>
+			<button type = "button" onclick = "moveShift()">↑</button>
+			<button type = "button" class = "nosee"></button>
+			<button type = "button" onclick = "moveLeft()">←</button>
+			<button type = "button" class = "nosee"></button>
+			<button type = "button" onclick = "moveRight()">→</button>
+			<button type = "button" class = "nosee"></button>
+			<button type = "button" onclick = "moveDown()">↓</button>
+			<button type = "button" class = "nosee"></button>
+		</div>
+		<script type="text/javascript" src="js/tetris.js" ></script>
+		<!--<script type="text/javascript" src="js/addload.js" ></script>-->
+	</body>
+</html>
